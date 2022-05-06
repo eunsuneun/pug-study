@@ -1,0 +1,18 @@
+- let firstName = "Richard"
+- let lastName = "Stibbard"
+- let fullName = `${firstName} ${lastName}`
+
+p #{firstName}
+p.first-name #{firstName}
+#first-name #{firstName}
+
+//- p = firstName은 안됨
+p= firstName
+p.first-name= firstName 
+#first-name= firstName
+
+.full-name #{firstName} #{lastName}
+.full-name= firstName + " " + lastName
+.full-name= "이름: " + firstName + " 성: " + lastName
+.full-name= `이름: ${firstName} 성: ${lastName}`
+.full-name= fullName
