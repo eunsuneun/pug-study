@@ -1,13 +1,8 @@
-doctype html
-html
-  head
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    title Acme Cleaning Service Ltd
-    link(rel="stylesheet" href="css/style.css")
-  body
-    include includes/nav
-    main
-      h2 Our Services
+extends templates/layout
+
+block main
+  main
+    h2 Our Services
       .sections-grid
         section.section.section1
           h3
@@ -27,4 +22,3 @@ html
         section.section.section6
           h3
             a(href="#") Covid Disinfection
-    include includes/footer

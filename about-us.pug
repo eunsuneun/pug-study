@@ -1,11 +1,5 @@
-doctype html
-html
-  head
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    title Acme Cleaning Service Ltd
-    link(rel="stylesheet" href="css/style.css")
-  body
-    include includes/nav
-    main
-      h2 About Us
-    include includes/footer
+extends templates/layout
+
+block main
+  main
+    h2 About Us
